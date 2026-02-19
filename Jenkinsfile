@@ -15,6 +15,7 @@ pipeline  {
             }
            
         }
+        
         stage('Build') {
             when {
                 anyOf {
@@ -27,7 +28,7 @@ pipeline  {
             }
         }
         stage('Test') {
-            
+
             when {
                 anyOf {
                     branch 'main'
