@@ -4,7 +4,6 @@ pipeline  {
     stages {
         stage('Restore dependencies') {
             when {
-
                 anyOf {
                     branch 'main'
                     branch 'feature'
@@ -15,7 +14,7 @@ pipeline  {
             }
            
         }
-        
+
         stage('Build') {
             when {
                 anyOf {
